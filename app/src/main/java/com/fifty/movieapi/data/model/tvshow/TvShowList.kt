@@ -1,4 +1,4 @@
-package com.fifty.movieapi.data.model
+package com.fifty.movieapi.data.model.tvshow
 
 
 import com.google.gson.annotations.SerializedName

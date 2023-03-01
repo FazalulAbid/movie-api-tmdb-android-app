@@ -1,4 +1,4 @@
-package com.fifty.movieapi.data
+package com.fifty.movieapi.data.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
