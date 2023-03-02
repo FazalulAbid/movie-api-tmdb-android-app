@@ -1,16 +1,16 @@
 package com.fifty.movieapi.data.repository.tvshow.datasourceimpl
 
 import com.fifty.movieapi.data.api.TMDBService
-import com.fifty.movieapi.data.model.movie.MovieList
-import com.fifty.movieapi.data.repository.movie.datasource.MovieRemoteDataSource
+import com.fifty.movieapi.data.model.tvshow.TvShowList
+import com.fifty.movieapi.data.repository.tvshow.datasource.TvShowRemoteDataSource
 import retrofit2.Response
 
 class TvShowRemoteDataSourceImpl(
     private val tmdbService: TMDBService,
     private val apiKey: String
-) : MovieRemoteDataSource {
+) : TvShowRemoteDataSource {
 
-    override suspend fun getMovies(): Response<MovieList> =
-        tmdbService.getPopularMovies(apiKey)
+    override suspend fun getTvShows(): Response<TvShowList> =
+        tmdbService.getPopularTvShows(apiKey)
 
 }
